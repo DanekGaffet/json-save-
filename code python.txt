@@ -1,0 +1,24 @@
+import json
+
+json1 = {'name': "fff"}
+print(json1["name"])
+
+param = {'hp': 1, "coins": 1, "dmg": 2}
+with open('save.json', 'w+') as file:
+    json.dump(param, file)
+
+with open('save.json', 'r') as save:
+    global loaded_data
+    loaded_data = json.load(save)
+
+print(loaded_data)
+
+def save(params):
+
+def is_save_exists():
+
+    return
+
+def load():
+
+    return
